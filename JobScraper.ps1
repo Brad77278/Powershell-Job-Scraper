@@ -1,4 +1,6 @@
-﻿$URL = 'https://www.indeed.com/jobs?q=junior%20web%20developer&l=San%20Diego%2C%20CA'
+#THIS IS A WORK IN PROCESS
+
+$URL = 'https://www.indeed.com/jobs?q=junior%20web%20developer&l=San%20Diego%2C%20CA'
 $SITE = Invoke-WebRequest $URL
 
 ($SITE.ParsedHtml.body.getElementsByClassName('title')| Where {
